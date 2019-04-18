@@ -1,0 +1,18 @@
+<h2>Track Info</h2>
+
+<p>
+  Track Name: <%= @track_info[0] %>
+</p>
+<p>
+  Artist: <%= @track_info[1] %>
+</p>
+<p>
+  Album Name: <%= @track_info[2] %>
+</p>
+<p>
+  Genre: <%= @track_info[3] %>
+</p>
+<p>
+  Length: <%= (@track_info[4] /60_000.to_f).round %> minutes
+</p>
+

@@ -1,0 +1,8 @@
+<h2>Tracks for <%= @tracks[0][:album_title] %></h2>
+<ul class="list-group">
+  <% @tracks.each do |track| %>
+    <li class="list-group-item">
+      <a href=<%= "/tracks/#{track[:id]}"%>><%= track[:track_name] %></a>
+    </li>
+  <% end %>
+</ul>

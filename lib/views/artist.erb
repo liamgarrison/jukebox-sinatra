@@ -1,0 +1,9 @@
+<h2>Albums for <%= @albums[0][:artist_name] %></h2>
+<ul class="list-group">
+  <% @albums.each do |album| %>
+    <li class="list-group-item">
+      <a href=<%= "/albums/#{album[:id]}"%>><%= album[:album_title] %></a>
+      (<%= album[:genre_name] %>)
+    </li>
+  <% end %>
+</ul>
